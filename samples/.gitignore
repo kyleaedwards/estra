@@ -1,1 +1,5 @@
 *.wav
+!kick.wav
+!tom.wav
+!hhc.wav
+!hho.wav

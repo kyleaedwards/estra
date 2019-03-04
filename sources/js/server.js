@@ -7,7 +7,7 @@ const estra = require('./estra');
 /**
  * Constants
  */
-const PORT = 49160;
+const PORT = 49161;
 const server = dgram.createSocket('udp4');
 
 /**
