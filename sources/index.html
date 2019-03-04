@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Estra</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div id="main">
+    <section id="areaLeft">
+      <div class="header">SAMPLES</div>
+      <ul id="samples"></ul>
+    </section>
+    <section id="areaSettings">
+      <div class="header">SETTINGS</div>
+      <div id="noSample">
+        <p>Please select a sample to see options.</p>
+      </div>
+      <div id="sampleInfo" style="display: none;">
+        <p>Clip:<span class="dull">...</span><strong id="clip"></strong></p>
+        <p>Gain:<span class="dull">...</span><strong><span id="gain"></span></strong>%</p>
+        <p>Delay:<span class="dull">..</span><strong><span id="delay"></span></strong>%</p>
+      </div>
+    </section>
+    <section id="areaScope">
+      <canvas id="scope"></canvas>
+    </section>
+  </div>
+  <script>
+    require('./js/server');
+  </script>
+</body>
+
+</html>

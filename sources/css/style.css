@@ -1,0 +1,97 @@
+html {
+  color: white;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Input Mono', 'Courier New', Courier, monospace;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+body {
+  padding: 25px;
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 10px;
+  bottom: 0;
+  padding: 20px 15px;
+  background: rgba(0, 0, 0, 0.5);
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  grid-template-rows: 1fr 150px;
+  grid-gap: 25px;
+  grid-template-areas:
+    'left settings'
+    'left scope';
+}
+
+#samples {
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  color: #666;
+}
+
+#samples li {
+  list-style: none;
+  margin-bottom: 5px;
+  padding: 1px 10px 3px;
+  cursor: pointer;
+  user-select: none;
+}
+
+#samples span span {
+  color: #fff;
+}
+
+#samples .icon {
+  width: 12px;
+  height: 12px;
+  border: solid 1px transparent;
+  position: relative;
+  background-color: transparent;
+  display: inline-block;
+  top: 3px;
+  left: -6px;
+}
+
+.header {
+  margin-bottom: 0.5em;
+}
+
+#sampleInfo {
+  font-size: 1.25em;
+  user-select: none;
+}
+
+#sampleInfo .dull {
+  color: #666;
+  margin-right: 5px;
+}
+
+.toggled {
+  color: #333;
+  background-color: #fff;
+}
+
+#samples .toggled span span {
+  color: #333;
+}
+
+.value {
+  cursor: pointer;
+}
+
+#areaSettings { grid-area: settings; }
+#areaLeft { grid-area: left; }
+#areaScope {
+  grid-area: scope;
+  width: 100%;
+  height: 100%;
+}
