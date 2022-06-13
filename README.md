@@ -6,6 +6,11 @@ Work-in-progress UDP server sampler for use with the [ORCΛ](https://github.com/
 
 ## Installation
 ```sh
+#Clone repo
+git clone https://github.com/kyleaedwards/estra.git
+
+cd estra
+
 # Install dependencies
 npm install
 
